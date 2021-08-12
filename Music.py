@@ -54,7 +54,7 @@ class MusicPlayer:
     scrol_y.config(command=self.playlist.yview)
     self.playlist.pack(fill=BOTH)
     # Changing Directory for fetching Songs
-    os.chdir("home/pi/Suda-Music/Music")
+    os.chdir("/home/pi/Suda-Music/Music")
     # Fetching Songs
     songtracks = os.listdir()
     # Inserting Songs into Playlist
