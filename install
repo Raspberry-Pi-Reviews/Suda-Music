@@ -1,0 +1,6 @@
+#!/bin/bash
+
+git clone https://github.com/Raspberry-Pi-Reviews/Suda-Music
+cd /home/pi
+chmod +x /home/pi/Suda-Music/Music.py
+chmod +x /home/pi/Suda-Music/start
