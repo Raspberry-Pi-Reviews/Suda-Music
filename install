@@ -2,8 +2,8 @@
 
 git clone https://github.com/Raspberry-Pi-Reviews/Suda-Music
 cd $HOME/Suda-Music
-chmod +x /home/pi/Suda-Music/musicplayer.py
-chmod +x /home/pi/Suda-Music/start
+chmod +x musicplayer.py
+chmod +x start
 echo "[Desktop Entry]
 Name=Suda Music
 Comment= Suda Music is a free to use music player.
