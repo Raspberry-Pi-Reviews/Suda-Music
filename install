@@ -12,5 +12,5 @@ Icon=$HOME/Suda-Music/Images/music.png
 Terminal=true
 StartupNotify=true
 Type=Application
-Categories=Utility;" > ~/.local/share/applications/Suda-Music.desktop || error "Failed to create menu button!""
+Categories=Utility;" > ~/.local/share/applications/Suda-Music.desktop || error "Failed to create menu button!"
 
