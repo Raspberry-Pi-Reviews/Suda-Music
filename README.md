@@ -1,4 +1,4 @@
-# Suda Music (v1.02)
+# Suda Music (v1.01)
 
 # How to install
 `wget -qO- https://raw.githubusercontent.com/Raspberry-Pi-Reviews/Suda-Music/main/install | bash`
