@@ -2,7 +2,7 @@
 
 echo "====================================="
 
-echo "Please wait while Suda Music Starts"
+echo "Please wait while Suda Music(v1.02) Starts"
 
 echo "====================================="
 
@@ -27,5 +27,5 @@ echo "====================================="
 
 sleep 3
 
-sudo python3 ${HOME}/Suda-Music/Music.py ${HOME}/Suda-Music > SudaMusic.log
+sudo python3 ${HOME}/Suda-Music/musicplayer.py 
 
