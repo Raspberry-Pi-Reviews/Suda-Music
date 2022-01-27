@@ -1,16 +1,15 @@
 #!/bin/bash
 
+cd $HOME
 git clone https://github.com/Raspberry-Pi-Reviews/Suda-Music
 cd $HOME/Suda-Music
 chmod +x musicplayer.py
-chmod +x start
 echo "[Desktop Entry]
 Name=Suda Music
 Comment= Suda Music is a free to use music player.
-Exec= $HOME/Suda-Music/start
-Icon= $HOME/Suda-Music/Images/music.png
-Terminal=true
+Exec=python3 /home/pi/Suda-Music/musicplayer.py
+Icon=/home/pi/Suda-Music/Images/music.png
+Terminal=false
 StartupNotify=true
 Type=Application
-Categories=Utility;" > ~/.local/share/applications/Suda-Music.desktop || error "Failed to create menu button!"
-
+Categories=Audio;Music;Player;AudioVideo;" > ~/.local/share/applications/Suda-Music.desktop || error "Failed to create menu button!"
