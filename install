@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd $HOME
 git clone https://github.com/Raspberry-Pi-Reviews/Suda-Music
 cd $HOME/Suda-Music
 chmod +x musicplayer.py
