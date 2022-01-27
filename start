@@ -1,0 +1,31 @@
+#!/bin/bash
+
+echo "====================================="
+
+echo "Please wait while Suda Music Starts"
+
+echo "====================================="
+
+sleep 8
+
+echo "                                     "
+
+echo "====================================="
+
+echo "Suda Music has started"
+
+
+echo "====================================="
+
+echo "                                     "
+
+echo "====================================="
+
+echo "Enjoy your experience with Suda Music"
+
+echo "====================================="
+
+sleep 3
+ 
+python3 ${HOME}/Suda-Music/musicplayer.py 
+
