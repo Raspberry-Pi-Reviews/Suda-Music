@@ -1,7 +1,9 @@
 # Suda Music (v1.01)
 
 # How to install
-`wget -qO- https://raw.githubusercontent.com/Raspberry-Pi-Reviews/Suda-Music/main/install | bash`
+```
+wget -qO- https://raw.githubusercontent.com/Raspberry-Pi-Reviews/Suda-Music/main/install | bash
+```
 
 # About
 Suda Music is a free to use Music Player for the Raspberry Pi.  
