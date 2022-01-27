@@ -27,5 +27,5 @@ echo "====================================="
 
 sleep 3
 
-sudo python3 ${HOME}/Suda-Music/musicplayer.py 
+python3 ${HOME}/Suda-Music/musicplayer.py 
 
