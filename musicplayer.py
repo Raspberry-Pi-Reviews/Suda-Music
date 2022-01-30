@@ -57,7 +57,7 @@ class MusicPlayer:
     def volumedown(self):
         self.bttn_clicks += 1
         while True:
-            float(button_clicks) == self.bttn_clicks
+            float(button_clicks) = self.bttn_clicks
             mixer.init()
             mix.music.set_volume(button_clicks/10)
            
