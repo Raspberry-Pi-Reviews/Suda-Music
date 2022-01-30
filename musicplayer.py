@@ -57,77 +57,12 @@ class MusicPlayer:
     def volumedown(self):
         self.bttn_clicks += 1
         while True:
-            if self.bttn_clicks==1:
-                mixer.init()
-                mixer.music.set_volume(0.9)
-            elif self.bttn_clicks==2:
-                mixer.init()
-                mixer.music.set_volume(0.8)
-            elif self.bttn_clicks==3:
-                mixer.init()
-                mixer.music.set_volume(0.7)
-            elif self.bttn_clicks==4:
-                mixer.init()
-                mixer.music.set_volume(0.6)
-            elif self.bttn_clicks==5:
-                mixer.init()
-                mixer.music.set_volume(0.5) 
-            elif self.bttn_clicks==6:
-                mixer.init()
-                mixer.music.set_volume(0.4)
-            elif self.bttn_clicks==7:
-                mixer.init()
-                mixer.music.set_volume(0.3)
-            elif self.bttn_clicks==8:
-                mixer.init()
-                mixer.music.set_volume(0.2)
-            elif self.bttn_clicks==9:
-                mixer.init()
-                mixer.music.set_volume(0.1)
-            elif self.bttn_clicks==10:
-                mixer.init()
-                mixer.music.set_volume(0.0)
-            
-                self.bttn_clicks=0
-            break
-            #print("Total Clicks: " + str(self.bttn_clicks))
-    
-    def volumeup(self):
-        self.bttn_clicks1 += 1
-        while True:  
-            if self.bttn_clicks1==1:
-                mixer.init()
-                mixer.music.set_volume(0.1)
-            elif self.bttn_clicks1==2:
-                mixer.init()
-                mixer.music.set_volume(0.2)
-            elif self.bttn_clicks1==3:
-                mixer.init()
-                mixer.music.set_volume(0.3)
-            elif self.bttn_clicks1==4:
-                mixer.init()
-                mixer.music.set_volume(0.4)
-            elif self.bttn_clicks1==5:
-                mixer.init()
-                mixer.music.set_volume(0.5) 
-            elif self.bttn_clicks1==6:
-                mixer.init()
-                mixer.music.set_volume(0.6)
-            elif self.bttn_clicks1==7:
-                mixer.init()
-                mixer.music.set_volume(0.7)
-            elif self.bttn_clicks1==8:
-                mixer.init()
-                mixer.music.set_volume(0.8)
-            elif self.bttn_clicks1==9:
-                mixer.init()
-                mixer.music.set_volume(0.9)
-            elif self.bttn_clicks1==10:
-                mixer.init()
-                mixer.music.set_volume(1.0)
-                
+            float(button_clicks) == self.bttn_clicks
+            mixer.init()
+            mix.music.set_volume(button_clicks/10)
+           
+            if self.bttn_clicks1==10:                
                 self.bttn_clicks1=0 
-            #print("Total Clicks: " + str(self.bttn_clicks))
             break
             
 root = Tk()
