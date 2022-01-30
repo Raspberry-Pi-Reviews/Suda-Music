@@ -13,23 +13,20 @@ class MusicPlayer:
         infoframe = LabelFrame(root,text="Updates",font=("times new roman",15,"bold"),bg="grey",fg="white",bd=7,relief=GROOVE)
         Load = Button(window, text = 'Load',  width = 10, height = 2, font = ('Times', 10, "bold"), bg="grey", fg="white", bd=4, relief=GROOVE, command = self.load)
         Play = Button(window, text = 'Play',  width = 10, height = 2, font = ('Times', 10 , "bold"), bg="grey", fg="white", bd=4, relief=GROOVE, command = self.play)
-        volumeupButton = Button(window, text = 'Volume  Up',  width = 10, height = 2, font = ('Times', 10, "bold"), bg="grey", fg="white", bd=4, relief=GROOVE, command = self.volumeup)
-        volumedownButton = Button(window, text = 'Volume  Down',  width = 10, height = 2, font = ('Times', 10, "bold"), bg="grey", fg="white", bd=4, relief=GROOVE, command = self.volumedown)
-        Play = Button(window, text = 'Play',  width = 10, height = 2, font = ('Times', 10 , "bold"), bg="grey", fg="white", bd=4, relief=GROOVE, command = self.play)
+        volumeupButton = Button(window, text = 'Volume',  width = 10, height = 2, font = ('Times', 10, "bold"), bg="grey", fg="white", bd=4, relief=GROOVE, command = self.volumeup)
         Pause = Button(window,text = 'Pause',  width = 10, height = 2, font = ('Times', 10, "bold"), bg="grey", fg="white", bd=4, relief=GROOVE, command = self.pause)
         Stop = Button(window ,text = 'Stop',  width = 10, height = 2, font = ('Times', 10, "bold"), bg="grey", fg="white", bd=4, relief=GROOVE, command = self.stop)
         label = Label(root, text = "Suda Music (v1.01)", bd=5, bg = "black", fg = "white", font =("times new roman",15,"bold"),relief=GROOVE)
         label.pack()
-        label2 = Label(root, text = "- Added Volume Controls", bg = "grey", fg = "white", font =("times new roman",15,"bold"))
+        label2 = Label(root, text = "- Click the volume button 10 times for max volume", bg = "grey", fg = "white", font =("times new roman",15,"bold"))
         label2.pack()
         label4 = Label(root, text = "- Changed Background Color From Light Grey To Light Blue", bg = "grey", fg = "white", font =("times new roman",15,"bold"))
         label4.pack()
         label3 = Label(root, text = "- Added New Control Panel Design", bg = "grey", fg = "white", font =("times new roman",15,"bold"))
         label3.pack()
         Load.place(x=45,y=80);Play.place(x=200,y=80);Pause.place(x=355,y=80);Stop.place(x=505,y=80);buttonframe.place(x=25,y=50,width=600,height=100);label.place(x=235,y=8)
-        sliderframe.place(x=25,y=170,width=300,height=100)
-        volumedownButton.place(x=200, y=200)
-        volumeupButton.place(x=45, y=200)
+        sliderframe.place(x=25,y=170,width=170,height=100)
+        volumeupButton.place(x=55, y=200)
         infoframe.place(x=25,y=300,width=600,height=300)
         label2.place(x=45,y=330)
         label3.place(x=45,y=360)
@@ -54,6 +51,8 @@ class MusicPlayer:
     def stop(self):
         mixer.init()
         mixer.music.stop()
+        
+    
         
     def volumedown(self):
         self.bttn_clicks += 1
@@ -130,7 +129,7 @@ class MusicPlayer:
                 self.bttn_clicks1=0 
             #print("Total Clicks: " + str(self.bttn_clicks))
             break
-        
+            
 root = Tk()
 app= MusicPlayer(root)
 root.mainloop()
